@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Web Development Workshop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style1.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h2>
+                DSC SNU
+            </h2>
+            <div id="search-bar">
+                <i class="fa fa-search" id="searchIcon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div id="empty"></div>
+        </div>
+        <div id="content">
+            <aside>
+                <a class="menuLink top" href="#" onclick="topClicked()">Top Stories</a>
+                <a class="menuLink new" href="#" onclick="newClicked()">New Stories</a>
+                <a class="menuLink best" href="#" onclick="bestClicked()">Best Stories</a>
+            </aside>
+            <div id="newsList">
+                <h2>Headlines</h2>
+                <div id="topStoriesContainer">
+
+                </div>
+            </div>
+            <div id="weatherBar">
+                <div id="weatherTitle"><h2>Weather Report</h2></div>
+                <div id="weatherContainer">
+                    <div id="weatherIcon">
+                        <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div id="temperature-value" class="temperature">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div id="weather-description" class="temperature"><p></p></div>
+                    <div id="region" class="temperature"><p>Hyderabad, India</p></div>
+                </div>
+            </div>
+        </div>
+        <script src="script1.js" type="application/javascript"></script>
+    </body>
+</html>
